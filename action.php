@@ -23,16 +23,15 @@
     if($result->num_rows>0) {
       while($row=$result->fetch_assoc()) {
         $output .=
-        '<div class="col-md-4 mb-2">
+        '<div class="col-lg-3 col-md-6 mb-4">
                 <div class="card-deck">
-                  <div class="card shadow">
+                  <div class="card shadow d-flex align-items-stretch">
                     <img src="'.$row['product_image'].'" class="card-img-top">
                     <div class="card-img-overlay">
                     </div>
                     <div class="card-body" style="margin-top: 25px;">
                       <h4 class="card-title">'.$row['product_name'].'</h4>
                       <p>
-                        '.$row['meal'].'<br>
                         $'.$row['price'].'<br>
                       </p>
                     </div>

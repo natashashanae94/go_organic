@@ -33,15 +33,15 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">Go Organic<span style="color: #4a9134;">.</span></a>
+        <a class="navbar-brand" href="index.html">Go Organic<span style="color: #4a9134;">.</span></a>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="#">On The Menu<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="menu.php">On The Menu<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">News</a>
+              <a class="nav-link" href="news.html">News</a>
             </li>
           </ul>
           <div class="flex-grow-1 d-flex">
@@ -59,34 +59,34 @@
           </ul>
         </div>
       </nav>
-      <div class="sale"><p>$5.99 Lunch Special! Click for details.</p></div>
     </header>
 
     <div class="container-fluid">
       <div class="row">
         <!--FILTER CHECKBOXES-->
         <div class="col-lg-3">
-          <h5>Filters</h5>
+          <h2 class="text">Filters</h2>
           <hr>
-          <h6 class="text-info">By Category</h6>
+          <h6 class="text">By Category</h6>
           <ul class="list-group">
             <?php
               $sql="SELECT DISTINCT meal FROM food ORDER BY meal";
               $result=$conn->query($sql);
               while($row=$result->fetch_assoc()) {
             ?>
-              <li class="list-group-item">
+              <li>
                 <div class="form-check">
-                  <label class="form-check-label">
+                  <label class="wrapper form-check-label">
                     <input type="checkbox" class="form-check-input product_check" value="<?=$row['meal'];?>" id="meal">
                     <?=$row['meal'];?>
+                    <span class="checkmark"></span>
                   </label>
                 </div>
               </li>
           <?php }?>
           </ul>
 
-          <h6 class="text-info">By Diet Preference</h6>
+          <h6 class="text">By Diet Preference</h6>
           <ul class="list-group">
             <?php
               $sql="SELECT DISTINCT diet FROM food ORDER BY diet";
@@ -95,9 +95,10 @@
             ?>
               <li>
                 <div class="form-check">
-                  <label class="form-check-label">
+                  <label class="wrapper form-check-label">
                     <input type="checkbox" class="form-check-input product_check" value="<?=$row['diet'];?>" id="diet">
                     <?=$row['diet']; ?>
+                    <span class="checkmark"></span>
                   </label>
                 </div>
               </li>
@@ -108,8 +109,7 @@
 
     <!--PRODUCT BOXES-->
     <div class="col-lg-9">
-      <h5 class="text-center" id="textChange">All Items</h5>
-      <hr>
+      <h5 class="text text-center" id="textChange">All Items</h5>
       <div class="text-center">
         <img src="images/35.gif" id="loader" style="display:none;" alt="page loader icon">
       </div>
@@ -119,16 +119,15 @@
           $result=$conn->query($sql);
           while($row=$result->fetch_assoc()){
         ?>
-        <div class="col-md-4 mb-2">
+        <div class="col-lg-3 col-md-6 mb-4">
           <div class="card-deck">
-            <div class="card shadow">
+            <div class="card shadow d-flex align-items-stretch">
               <img src="<?= $row['product_image'] ?>" class="card-img-top">
               <div class="card-img-overlay">
               </div>
               <div class="card-body" style="margin-top: 25px;">
                 <h4 class="card-title"><?= $row['product_name']; ?></h4>
                 <p>
-                  <?= $row['meal']; ?><br>
                   $<?= $row['price']; ?><br>
                 </p>
               </div>
