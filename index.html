@@ -2,22 +2,23 @@
 <html>
 <!--UPDATED 10/27/2019-->
   <head>
-      <title>Go Organic Menu</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=n">
-      <!-- Latest compiled and minified CSS -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-      <!-- jQuery library -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <!-- Popper JS -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-      <!-- Latest compiled JavaScript -->
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-      <script src="https://kit.fontawesome.com/1eadafd9bb.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-      <link rel="stylesheet" href="css/index.css">
-      <style>
+    <title>Go Organic Menu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=n">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/1eadafd9bb.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <!--https://icons8.com-->
+    <style>
       header {
         position: relative;
         background-color: black;
@@ -66,7 +67,21 @@
           border-color: transparent;
         }
       }
-      </style>
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      .intro {
+        font-size: 20px;
+        color: #918e8d;
+        line-height: 155%;
+      }
+
+      .container {
+        max-width: 960px;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -107,20 +122,42 @@
       <div class="container h-100">
         <div class="d-flex h-100 text-center align-items-center">
           <div class="w-100 text-white">
-            <h1 class="hero-title display-3">Healthy. Hearty. <span id="title">Wholesome.</span></h1>
+            <h1 class="hero-title display-4">Healthy. Hearty. <span id="title">Wholesome.</span></h1>
           </div>
         </div>
       </div>
     </header>
-    <section class="my-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 mx-auto">
-
-          </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 align-self-center">
+          <img src="images/pale-order-completed.png" alt="shopping cart" style="width: 30rem; height: 25rem;">
+        </div>
+        <div class="col-md-6 align-self-center">
+          <h2 class="text">Who We Are.</h2>
+          <p class="intro">Go Organic is an online Artisan market that lets you order the finest cuisine from all over the world!</p>
         </div>
       </div>
-    </section>
+
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <h2 class="text">We're a lifestyle.</h2>
+          <p class="intro">Enjoy a selection of fresh quality food to suit your health-conscious habits.</p>
+        </div>
+        <div class="col-md-6 align-self-center">
+          <img src="images/success-3.png" alt="shopping cart" style="width: 30rem; height: 25rem;">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <img src="images/pale-waiting.png" alt="shopping cart" style="width: 30rem; height: 25rem;">
+        </div>
+        <div class="col-md-6 align-self-center">
+          <h2 class="text">We Save You Time.</h2>
+          <p class="intro">Forget driving to the grocery store! Go Organic delivers your meals to your doorstep.</p>
+        </div>
+      </div>
+    </div>
     <script>
       document.addEventListener('DOMContentLoaded',function(event){
       // array with texts to type in typewriter
@@ -137,7 +174,7 @@
           // wait for a while and call this function again for next character
           setTimeout(function() {
             typeWriter(text, i + 1, fnCallback)
-          }, 100);
+          }, 250);
         }
         // text finished, call callback if there is a callback function
         else if (typeof fnCallback == 'function') {
