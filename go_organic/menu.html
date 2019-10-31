@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flex Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/css-reset.css">
+    <script src="https://kit.fontawesome.com/1eadafd9bb.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+    <style>
+      .hero-img {
+        background: url("images/broccoli-carrots-close-up-952482.jpg") no-repeat center center;
+        background-size: cover;
+        height: 450px;
+      }
+    </style>
+  </head>
+    <body>
+      <header class="header">
+        <div class="container">
+          <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+              <div class="nav-title">
+                Go Organic<span>.</span>
+              </div>
+            </div>
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span id="bar1"></span>
+                <span id="bar2"></span>
+                <span id="bar3"></span>
+              </label>
+            </div>
+
+            <div class="nav-links">
+              <div class="left">
+                <a href="#">Browse Products</a>
+                <a href="#">News</a>
+              </div>
+
+              <div class="right">
+                <a href="#"><i class="fas fa-search"></i></a>
+                <a href="#">Log In</a>
+                <a href="#">Sign Up</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sale"><p>$5.99 Lunch Special! Click for details.</p></div>
+      </header>
+
+       <div class="hero-img">
+
+         <div class="hero-wrapper">
+           <div class="hero-text">
+             <h1>ORDER ONLINE</h1>
+             <p>Fresh Food. Fast Delivery. Fulfilling Lives.</p>
+             <div class="button">
+               <button class="btn">Create Account</button>
+             </div>
+           </div>
+         </div>
+       </div>
+
+       <div class="container">
+        <h1>PICK A <span>PLATTER</span></h1>
+
+       <div class="filter-box">
+        <input type="checkbox" id="filter-check">
+        <div class="product-filter">
+
+          <h2>Filter</h2>
+          <div id="filter-border"></div>
+
+          <div class="product-category">
+           <h3>By Category</h3>
+           <label class="wrapper">Breakfast
+             <input type="checkbox" rel="breakfast" onchange="filterSelection();">
+             <span class="checkmark"></span>
+           </label>
+
+           <label class="wrapper">Lunch
+             <input type="checkbox" rel="lunch" onchange="filterSelection();">
+             <span class="checkmark"></span>
+           </label>
+
+           <label class="wrapper">Dinner
+             <input type="checkbox" rel="dinner" onchange="filterSelection();">
+             <span class="checkmark"></span>
+           </label>
+
+           <label class="wrapper">Snacks & Dessert
+             <input type="checkbox" rel="snacks-dessert" onchange="filterSelection();">
+             <span class="checkmark"></span>
+           </label>
+          </div>
+
+          <div class="product-category">
+           <h3>By Dietary Preference</h3>
+            <label class="wrapper">Vegan
+              <input type="checkbox" rel="vegan" onchange="filterSelection();">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="wrapper">Vegetarian
+              <input type="checkbox" rel="vegetarian" onchange="filterSelection();">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="wrapper">Beef, Pork, Poultry
+              <input type="checkbox" rel="meat" onchange="filterSelection();">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="wrapper">Gluten-Free
+              <input type="checkbox" rel="gluten-free"  onchange="filterSelection();">
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="wrapper">Keto Friendly
+              <input type="checkbox" rel="keto" onchange="filterSelection();">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+
+      </div><!--end filter-box-->
+
+         <main>
+           <section class="products">
+             <div class="product-card vegan dinner">
+                 <div class="product-image">
+                   <img src="images/appetizer-bowl-bread-539451.jpg" alt="red soup">
+                 </div>
+                 <div class="product-info">
+                   <h5>Tomato Soup</h5>
+                   <h6>$2.94</h6>
+                 </div>
+             </div>
+             <div class="product-card keto lunch">
+                 <div class="product-image">
+                   <img src="images/avocado-cooked-delicious-262959.jpg" alt="salmon dish">
+                 </div>
+                 <div class="product-info">
+                   <h5>Atlantic Salmon</h5>
+                   <h6>$7.99/lb</h6>
+                 </div>
+             </div>
+             <div class="product-card keto vegan vegetarian breakfast lunch">
+                 <div class="product-image">
+                   <img src="images/avocado-blur-bowl-1484522.jpg" alt="avocado bowl">
+                 </div>
+                 <div class="product-info">
+                   <h5>Avocado Bowl</h5>
+                   <h6>$3.99</h6>
+                 </div>
+             </div>
+             <div class="product-card keto lunch">
+                 <div class="product-image">
+                   <img src="images/barbecue-chicken-cuisine-2338407 (1).jpg" alt="bbq chicken">
+                 </div>
+                 <div class="product-info">
+                   <h5>Barbecue Chicken</h5>
+                   <h6>$4.99</h6>
+                 </div>
+             </div>
+             <div class="product-card meat lunch">
+                 <div class="product-image">
+                   <img src="images/barbecue-colorful-colourful-53148.jpg" alt="salmon dish">
+                 </div>
+                 <div class="product-info">
+                   <h5>Beef Kabob</h5>
+                   <h6>$6.99/lb</h6>
+                 </div>
+             </div>
+             <div class="product-card vegan lunch">
+                 <div class="product-image">
+                   <img src="images/bread-close-up-delicious-1209029.jpg" alt="kabob">
+                 </div>
+                 <div class="product-info">
+                   <h5>Tofurkey Sandwich</h5>
+                   <h6>$3.99</h6>
+                 </div>
+             </div>
+             <div class="product-card gluten-free breakfast">
+                 <div class="product-image">
+                   <img src="images/bread-delicious-flour-1775043 (1).jpg" alt="Gluten-free Wheat Bread">
+                 </div>
+                 <div class="product-info">
+                   <h5>Gluten-free Wheat Bread</h5>
+                   <h6>$5.99</h6>
+                 </div>
+             </div>
+             <div class="product-card vegetarian snack lunch">
+                 <div class="product-image">
+                   <img src="images/bread-chip-close-up-62097.jpg" alt="Grilled Cheese Platter">
+                 </div>
+                 <div class="product-info">
+                   <h5>Grilled Cheese Platter</h5>
+                   <h6>$3.49</h6>
+                 </div>
+             </div>
+             <div class="product-card meat lunch dinner">
+                 <div class="product-image">
+                   <img src="images/burrito-chicken-close-up-461198.jpg" alt="Grilled Chicken Burrito">
+                 </div>
+                 <div class="product-info">
+                   <h5>Grilled Chicken Burrito</h5>
+                   <h6>$1.99</h6>
+                 </div>
+             </div>
+             <div class="product-card vegetarian snack lunch dinner">
+                 <div class="product-image">
+                   <img src="images/cheese-close-up-diet-61180.jpg" alt="Caprice Salad">
+                 </div>
+                 <div class="product-info">
+                   <h5>Caprice Salad</h5>
+                   <h6>$4.99/lb</h6>
+                 </div>
+             </div>
+             <div class="product-card vegetarian lunch dinner">
+                 <div class="product-image">
+                   <img src="images/colors-delicious-food-718742.jpg" alt="Curry">
+                 </div>
+                 <div class="product-info">
+                   <h5>Tikka Masala</h5>
+                   <h6>$4.99</h6>
+                 </div>
+             </div>
+             <div class="product-card meat lunch dinner">
+                 <div class="product-image">
+                   <img src="images/asparagus-cuisine-delicious-1247677.jpg" alt="Grilled Chicken & Asparagus">
+                 </div>
+                 <div class="product-info">
+                   <h5>Chicken Asparagus</h5>
+                   <h6>$5.99</h6>
+                 </div>
+             </div>
+           </section>
+         </main>
+       </div><!--container-->
+
+      <footer>
+           <div class= "content2">
+
+             <div class="subscribe">
+               <h2>KEEP UP WITH US</h2>
+                <form>
+                   <input type="text" id="email" name="email" placeholder="email@example.com">
+                   <button type="submit" id="submit">Submit</button>
+                </form>
+             </div>
+
+           <div class="footer-links">
+             <div class="links">
+               <ul>
+                <li><a href="#">Browse Products</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Log In</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+             </div>
+
+             <div class="links">
+               <ul>
+                 <li><a href="#">Web Developers</a></li>
+                <li><a href="#">Contact us</a></li>
+                 <li><a href="#">Terms & Conditions</a></li>
+                 <li><a href="#">Fundraising</a></li>
+               </ul>
+             </div>
+           </div><!--footer-links-->
+
+         </div><!--content2-->
+         </footer>
+      </body>
+  </html>

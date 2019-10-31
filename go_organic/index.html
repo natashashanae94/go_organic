@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html>
+<!--UPDATED 10/30/2019-->
+  <head>
+    <title>Go Organic Menu</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=n">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/1eadafd9bb.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <!--https://icons8.com-->
+    <style>
+      header {
+        position: relative;
+        background-color: black;
+        height: 100vh;
+        min-height: 25rem;
+        width: 100%;
+        overflow: hidden;
+      }
+      header video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+      }
+      header .container {
+        position: relative;
+        z-index: 2;
+      }
+      header .overlay {
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+      }
+      #title {
+        border-right: .05em solid;
+        animation: caret 1s steps(1) infinite;
+      }
+      @keyframes caret {
+        50% {
+          border-color: transparent;
+        }
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      .intro {
+        font-size: 20px;
+        color: #918e8d;
+        line-height: 155%;
+      }
+      .container-fluid {
+        max-width: 960px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Go Organic<span style="color: #4a9134;">.</span></a>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="menu.php">On The Menu<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+          </ul>
+          <div class="flex-grow-1 d-flex">
+             <form class="myForm form-inline flex-nowrap bg-light mx-0 mx-lg-auto rounded w-100">
+              <input class="form-control mx-0 mx-lg-auto w-50" type="search" placeholder="Search &#xF002;" style="font-family:Arial, FontAwesome" aria-label="Search">
+             </form>
+          </div>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Log In<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="overlay"></div>
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="images/video.mp4" type="video/mp4">
+      </video>
+      <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-white">
+            <h1 class="hero-title display-4">Healthy. Hearty.<span id="title">Wholesome.</span></h1>
+          </div>
+        </div>
+      </div>
+    </header>
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="eeImage">
+              <img src="images/pale-order-completed.png" alt="shopping cart" class="image" style="width: 25rem; height: 20rem;" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="eeText">
+              <h2 class="text align-self-center">Who We Are.</h2>
+              <p>Spicy jalapeno bacon ipsum dolor amet kevin short ribs pork,
+                ball tip hamburger ham meatloaf bresaola burgdoggen sausage andouille.
+                Brisket shank ball tip filet mignon. Picanha leberkas ham short ribs meatball alcatra. </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="eeText">
+              <h2 class="text align-self-center">We are a lifestyle.</h2>
+              <p>Spicy jalapeno bacon ipsum dolor amet kevin short ribs pork,
+                ball tip hamburger ham meatloaf bresaola burgdoggen sausage andouille.
+                Brisket shank ball tip filet mignon. Picanha leberkas ham short ribs meatball alcatra. </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="eeImage">
+              <img src="images/success-3.png" alt="shopping cart" class="image" style="width: 25rem; height: 20rem;"  />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="eeImage">
+              <img src="images/pale-waiting.png" alt="shopping cart" class="image" style="width: 25rem; height: 20rem;" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="eeText">
+              <h2 class="text align-self-center">We save time.</h2>
+              <p>Spicy jalapeno bacon ipsum dolor amet kevin short ribs pork,
+                ball tip hamburger ham meatloaf bresaola burgdoggen sausage andouille.
+                Brisket shank ball tip filet mignon. Picanha leberkas ham short ribs meatball alcatra. </p>
+            </div>
+          </div>
+        </div>
+      </div><!--end container-->
+    <script>
+      document.addEventListener('DOMContentLoaded',function(event){
+      // array with texts to type in typewriter
+      var dataText = [ "Happy.", "Heavenly.", "Yummy.", "Wholesome."];
+      // type one text in the typwriter
+      // keeps calling itself until the text is finished
+      function typeWriter(text, i, fnCallback) {
+        // check if text isn't finished yet
+        if (i < (text.length)) {
+          // add next character to h1
+         document.getElementById("title").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+          // wait for a while and call this function again for next character
+          setTimeout(function() {
+            typeWriter(text, i + 1, fnCallback)
+          }, 250);
+        }
+        // text finished, call callback if there is a callback function
+        else if (typeof fnCallback == 'function') {
+          // call callback after timeout
+          setTimeout(fnCallback, 700);
+        }
+      }
+      // start a typewriter animation for a text in the dataText array
+       function StartTextAnimation(i) {
+         if (typeof dataText[i] == 'undefined'){
+            setTimeout(function() {
+              StartTextAnimation(0);
+            }, 5000);
+         }
+         // check if dataText[i] exists
+        if (i < dataText[i].length) {
+          // text exists! start typewriter animation
+         typeWriter(dataText[i], 0, function(){
+           // after callback (and whole text has been animated), start next text
+           StartTextAnimation(i + 1);
+         });
+        }
+      }
+      // start the text animation
+      StartTextAnimation(0);
+      });
+    </script>
+  </body>
+</html>
