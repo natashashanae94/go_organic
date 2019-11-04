@@ -1,7 +1,10 @@
+<?php
+  require 'header.php';
+ ?>
 <!DOCTYPE html>
 <html>
   <head>
-      <title>Go Organic Menu</title>
+      <title>Log In | Go Organic</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=n">
       <!-- Latest compiled and minified CSS -->
@@ -29,18 +32,18 @@
           margin: 0 auto;
         }
 
-        .logInFormSection{
+        .formSection{
           background-color: #fff;
           border: 1px solid #eceae6;
           padding: 30px 20px;
         }
 
-        .logInTitle{
+        .formTitle{
           margin-bottom: 30px;
           text-align: center;
         }
 
-        .logInTitle h1{
+        .formTitle h1{
           font-size:32px;
           line-height: 38px;
         }
@@ -56,73 +59,51 @@
         }
 
         .forgot-password-link{
-          float: right;
           text-decoration: underline;
           color: #b9b9b9;
         }
       </style>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">Go Organic<span style="color: #4a9134;">.</span></a>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="menu.php">On The Menu<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="news.html">News</a>
-            </li>
-          </ul>
-          <div class="flex-grow-1 d-flex">
-             <form class="myForm form-inline flex-nowrap bg-light mx-0 mx-lg-auto rounded w-100">
-              <input class="form-control mx-0 mx-lg-auto w-50" type="search" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome" aria-label="Search">
-             </form>
-          </div>
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="login.html">Log In<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sign Up</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+      <?php
+        if(isset($_SESSION['userId'])){
+          echo '<p class="login-status">You are logged in!</p>';
+        } else {
+          echo '<p class="login-status">You are logged in!</p>';
+        }
+      ?>
       <section>
-        <div class="logInFormSection">
-          <div class="logInTitle text">
+        <div class="formSection">
+          <div class="formTitle text">
             <h1>Log In</h1>
           </div>
           <div class="logInForm">
-            <form>
+          <form method="POST">
             <div class="form-group">
-              <label for="exampleInputEmail1" class=" text mb-3">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <label for="exampleInputUName1" class=" text mb-3">username</label>
+              <input type="name" class="form-control" id="exampleInputName1" name="mailuid" aria-describedby="uNameHelp">
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1" class="text mb-3">Password*</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" required>
+              <input type="password" class="form-control" id="exampleInputPassword1" name="logInPwd" required>
             </div>
             <div class="button mb-4">
               <label class="wrapper form-check-label logInCheck" for="exampleCheck1">
                 <input type="checkbox" class="font-weight-bold form-check-input" id="exampleCheck1">
                 Keep me signed in.
                 <span class="checkmark"></span>
-                <a href="index.html" class="forgot-password-link">Forgot Password?</a>
+                <a href="index.html" class="forgot-password-link float-right">Forgot Password?</a>
               </label>
             </div>
             <button type="submit" class="btn btn-success w-100">LOG IN</button>
-            <p class="sign-in-link mx-auto mt-4 align-items-center">Don't have an account? <a href="#"><u>Sign up</u></a></p>
+            <p class="sign-in-link mx-auto mt-4 align-items-center">Don't have an account? <a href="signup.php"><u>Sign up</u></a></p>
           </form>
           </div>
         </div><!--logInFormSection-->
     </section>
   </body>
 </html>
+<?php
+  require 'footer.php';
+ ?>
