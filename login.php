@@ -62,6 +62,11 @@
           text-decoration: underline;
           color: #b9b9b9;
         }
+
+        input{
+        	font-family: 'Roboto', sans-serif;
+        	font-size: 12px;
+        }
       </style>
   </head>
   <body>
@@ -70,7 +75,7 @@
         if(isset($_SESSION['userId'])){
           echo '<p class="login-status">You are logged in!</p>';
         } else {
-          echo '<p class="login-status">You are logged in!</p>';
+          echo '<p class="login-status">You are logged out!</p>';
         }
       ?>
       <section>
@@ -79,7 +84,7 @@
             <h1>Log In</h1>
           </div>
           <div class="logInForm">
-          <form method="POST">
+          <form action="includes/log.inc.php" method="POST">
             <div class="form-group">
               <label for="exampleInputUName1" class=" text mb-3">username</label>
               <input type="name" class="form-control" id="exampleInputName1" name="mailuid" aria-describedby="uNameHelp">
@@ -96,7 +101,7 @@
                 <a href="index.html" class="forgot-password-link float-right">Forgot Password?</a>
               </label>
             </div>
-            <button type="submit" class="btn btn-success w-100">LOG IN</button>
+            <button type="submit" class="btn btn-success w-100" name="login-submit">LOG IN</button>
             <p class="sign-in-link mx-auto mt-4 align-items-center">Don't have an account? <a href="signup.php"><u>Sign up</u></a></p>
           </form>
           </div>
@@ -104,6 +109,3 @@
     </section>
   </body>
 </html>
-<?php
-  require 'footer.php';
- ?>

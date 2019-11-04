@@ -64,6 +64,10 @@
         color: #b9b9b9;
       }
 
+      input{
+      	font-family: 'Roboto', sans-serif;
+      	font-size: 12px;
+      }
     </style>
   </head>
   <body>
@@ -95,7 +99,8 @@
                    <span class="checkmark"></span>
                  </label>
                </div>
-               <button type="submit" class="btn btn-success w-100" name="signup-submit">LOG IN</button>
+               <button type="submit" class="btn btn-success w-100" name="signup-submit">SIGN IN</button>
+               <p class="sign-in-link mx-auto mt-4 align-items-center">I already have an <a href="login.php"><u>account.</u></a></p>
              </form>
            </div>
          </section>
@@ -103,7 +108,3 @@
      </main>
    </body>
  </html>
-
-<?php
-  require "footer.php";
-?>
