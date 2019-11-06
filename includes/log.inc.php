@@ -33,7 +33,7 @@ if(isset($_POST['login-submit'])){
             $_SESSION['userId'] = $row['idUsers'];
             $_SESSION['userUid'] = $row['uidUsers'];
 
-            header("Location: ../login.php?login=success");
+            header("Location: ../index.php");
             exit();
 
           } else {
@@ -50,7 +50,7 @@ if(isset($_POST['login-submit'])){
     }//end if..else
 
 } else {
-  header("Location: ../login.php");
+  header("Location: ../index.php");
   exit();
 }//end if..else
 ?>

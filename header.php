@@ -19,6 +19,14 @@ session_start();
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="css/index.css">
+
+  <style>
+
+    button {
+      border: none;
+      background: none;
+    }
+  </style>
   </head>
   <body>
     <header>
@@ -26,7 +34,7 @@ session_start();
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="index.html">Go Organic<span style="color: #4a9134;">.</span></a>
+        <a class="navbar-brand" href="index.php">Go Organic<span style="color: #4a9134;">.</span></a>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -42,13 +50,28 @@ session_start();
               <input class="form-control mx-0 mx-lg-auto w-50" type="search" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome" aria-label="Search">
              </form>
           </div>
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="login.php">Log In<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="signup.php">Sign Up</a>
-            </li>
+        <?php
+        if(isset($_SESSION['userId'])) {
+          /*LOG OUT BUTTON*/
+          echo '
+            <form method="POST" action="includes/logout.inc.php"><ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <button type="submit" class="nav-link" name="login-submit">LOG OUT</button>
+              </li>
+            </ul></form>';
+
+         } else {
+            echo'
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+               <a class="nav-link" href="login.php">Log In<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+               <a class="nav-link" href="signup.php">Sign Up<span class="sr-only">(current)</span></a>
+              </li>
+            </ul>';
+          }
+             ?>
           </ul>
         </div>
       </nav>
