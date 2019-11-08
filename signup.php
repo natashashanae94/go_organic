@@ -23,14 +23,13 @@
 
     <style>
       body{
-        background-color: #f9f8f5;
+        background-color: #f9f8f5!important;
       }
       section {
         padding-top: 30px;
         padding-bottom: 30px;
         width: 100%;
         max-width: 400px;
-        margin: 0 auto;
       }
 
       .formSection{
@@ -71,10 +70,10 @@
     </style>
   </head>
   <body>
-     <main>
+   <main>
        <div class="wrapper-main">
-         <section class="section-default">
-           <div class="formSection">
+         <section class="section-default mx-auto">
+           <div class="formSection shadow mt-5">
              <div class="formTitle text">
                <h1>Create an account</h1>
              </div>
@@ -106,5 +105,8 @@
          </section>
        </div>
      </main>
+     <?php
+       require 'footer.php';
+     ?>
    </body>
  </html>

@@ -22,17 +22,16 @@
 
       <style>
         body{
-          background-color: #f9f8f5;
+          background-color: #f9f8f5!important;
         }
         section {
           padding-top: 30px;
           padding-bottom: 30px;
           width: 100%;
           max-width: 400px;
-          margin: 0 auto;
         }
 
-        .formSection{
+        .formSection {
           background-color: #fff;
           border: 1px solid #eceae6;
           padding: 30px 20px;
@@ -71,8 +70,8 @@
   </head>
   <body>
 
-      <section>
-        <div class="formSection">
+      <section class="mx-auto">
+        <div class="formSection shadow mt-5">
           <div class="formTitle text">
             <h1>Log In</h1>
           </div>
@@ -100,5 +99,8 @@
           </div>
         </div><!--logInFormSection-->
     </section>
+    <?php
+      require 'footer.php';
+     ?>
   </body>
 </html>
