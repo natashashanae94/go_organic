@@ -184,3 +184,104 @@ header {
 .card-deck {
 	cursor: pointer;
 }
+
+/*NAVBAR SEARCH*/
+.searchbar {
+	width: 500px!important;
+}
+
+/*FOOTER*/
+.footer {
+	border: 1px solid #e4e6eb;
+	background-color: #fff;
+}
+
+.footer #footer-content {
+	padding-top: 30px;
+}
+
+ .footer .middle-spacer{
+	 height: 125px;
+ }
+
+ .footer-newsletter-signup {
+	 border-left: 1px solid #e4e6eb;
+	 border-right: 1px solid #e4e6eb;
+	 margin: 0px 30px;
+ }
+
+ .footer-title {
+	 text-align: center;
+	 font-family: 'Roboto', sans-serif;
+	 text-transform: uppercase;
+	 color: #303236;
+	 letter-spacing: 1px;
+	 font-size: 14px;
+ }
+
+ .socials {
+	 list-style: none;
+	 padding-top: 10px;
+ }
+
+ .socials li {
+	 display: inline-block;
+	 cursor: pointer;
+ }
+
+ .socials li i {
+	 font-size: 25px;
+	 margin: 15px;
+	 color: #d1d1e0;
+ }
+
+ .footer-newsletter-form-hldr {
+	 width: 330px;
+	 margin: 0 auto;
+	 text-align: center;
+	 margin-bottom: 10px;
+ }
+
+ .subscribe-input{
+	 border-radius: 4px 0 0 4px;
+	 border: none;
+	 box-shadow: inset 0 0 0 1px #e4e6eb;
+	 padding: 10px 15px;
+	 font-family: 'Roboto', sans-serif;
+	 line-height: 20px;
+	 background-color: #fff;
+	 width: 275px;
+	 float: left;
+	 color: #303236;
+ }
+
+ .subscribe-btn {
+	 border-radius: 0 4px 4px 0;
+	 font-family: 'Roboto', sans-serif;
+	 font-size: 15px;
+	 text-transform: uppercase;
+	 font-weight: bold;
+	 color: #fff;
+	 background-color: #4a9134;
+	 padding: 10px 15px;
+	 line-height: 20px;
+	 float: left;
+ }
+
+ .subscribe-text {
+	 clear: both;
+ }
+
+ .noodles {
+	 border-radius: 4px;
+ }
+
+ .blog-preview {
+	 margin: 0 auto;
+	 width: 320px;
+ }
+
+ .blog-preview-text {
+	 margin-left: 100px;
+	 line-height: 1.5;
+ }

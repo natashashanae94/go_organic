@@ -2,26 +2,14 @@
 session_start();
  ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Go Organic - Log In</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=n">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/1eadafd9bb.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
-
+    <script src="https://kit.fontawesome.com/1eadafd9bb.js"></script>
   <style>
-
     button {
       border: none;
       background: none;
@@ -45,9 +33,9 @@ session_start();
               <a class="nav-link" href="news.html">News</a>
             </li>
           </ul>
-          <div class="flex-grow-1 d-flex">
+          <div class="searchbar flex-grow-1 d-flex">
              <form class="myForm form-inline flex-nowrap bg-light mx-0 mx-lg-auto rounded w-100">
-              <input class="form-control mx-0 mx-lg-auto w-50" type="search" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome" aria-label="Search">
+              <input class="form-control mx-0 mx-lg-auto w-100" type="search" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome" aria-label="Search">
              </form>
           </div>
         <?php
@@ -62,7 +50,7 @@ session_start();
 
          } else {
             echo'
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
               <li class="nav-item">
                <a class="nav-link" href="login.php">Log In<span class="sr-only">(current)</span></a>
               </li>
@@ -76,5 +64,8 @@ session_start();
         </div>
       </nav>
     </header>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
